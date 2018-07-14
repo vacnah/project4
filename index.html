@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XO</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+<div id="start_first">
+    <p>Who Will Start The Game</p>
+    <button class="user" type="button">User</button>
+    <button class="computer" type="button">Computer</button>
+</div>
+
+
+<div id="game" class="none">
+
+    <div class="box top left" id="top_left" data-target="div"></div>
+    <div class="box top center " id="top_center" data-target="div"></div>
+    <div class="box top right" id="top_right" data-target="div"></div>
+    <div class="box middle left" id="middle_left" data-target="div"></div>
+    <div class="box middle center" id="middle_center" data-target="div"></div>
+    <div class="box middle right" id="middle_right" data-target="div"></div>
+    <div class="box bottom left" id="bottom_left" data-target="div"></div>
+    <div class="box bottom center" id="bottom_center" data-target="div"></div>
+    <div class="box bottom right" id="bottom_right" data-target="div"></div>
+
+</div>
+
+<div class="modal">
+
+    <div class="winner show" id="winner">
+
+
+        <span  id="restart" >Restart Game ?</span>
+
+    </div>
+</div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+#game,#restart,button:hover{
+    cursor: pointer;
+}
+
+.none.block{
+    display: block;
+    border: 2px solid;
+    width: 590px;
+    height: 560px;
+    position: relative;
+    left: calc(50% - 300px);
+    top: calc(50% - 300px);
+}
+
+.box{
+    position: absolute;
+    width: 190px;
+    height: 180px;
+    border-bottom:10px solid green ;
+    text-align: center;
+    line-height: 180px;
+    font-size: 150px;
+    /*z-index: 1000;*/
+
+
+}
+
+.middle{
+    top:190px;
+}
+.bottom{
+    top: 380px;
+}
+.left{
+
+    border-right:10px solid green ;
+}
+.center{
+
+    border-right:10px solid green ;
+    border-left:10px solid green ;
+    left: 190px;
+}
+
+.right{
+
+    border-left:10px solid green ;
+    left: 390px;
+}
+
+.bottom.left,.bottom.right,.bottom.center{
+    border-bottom: none;
+}
+
+#start_first{
+    position: absolute;
+    width: 40%;
+    left: calc(50% - 20%);
+    border: 1px solid #2b8282;
+    background-color: #2b8282;
+    text-align: center;
+    padding: 4%;
+    border-radius: 10px;
+}
+.user{
+    width: 200px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background: green;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 4px 8px 2px;
+    height: 30px;
+}
+.user:active,.computer:active{
+    box-shadow:    1px 4px 8px -5px;
+}
+.computer{
+    box-shadow: 1px 4px 8px 2px;
+
+    width: 200px;
+    background: red;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+
+}
+.none{
+    display: none;
+}
+
+.fa.fa-circle-o{
+    color: coral;
+}
+.fa.fa-times{
+    color: #2b8282;
+}
+.winner,.modal{
+    display: none;
+}
+
+.winner.show{
+    display: block;
+    width: 50%;
+    height: 100px;
+    background: #673AB7;
+    position: absolute;
+    z-index: 2000;
+    left: calc(50% - 25%);
+    top: calc(50% - 50px);
+    text-align: center;
+    line-height: 100px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+
+#restart{
+    display: inline-block;
+    width: 200px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 9%;
+    background: green;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 4px 8px 2px;
+    height: 30px;
+    line-height: 30px;
+}
+#restart:active{
+    box-shadow:    1px 4px 8px -5px;
+}
+
+.modal.show{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: #312f4f;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+}
